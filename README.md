@@ -6,6 +6,7 @@ Hi my name is Silvester Wali ,nice to meet you
 
 
 ![GitHub followers](https://img.shields.io/github/followers/silvesterwali?style=social)
+![GitHub User's stars](https://img.shields.io/github/stars/silvesterwali?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/silvesterwali?style=social)
 
 
