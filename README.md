@@ -11,7 +11,7 @@ Hi my name is Silvester Wali ,nice to meet you
 
 
 
-I am very interested in coding, currently I'm exploring javascript and php. Express and Lumen are the backends that I understand today. i am also interested in nuxt and this is very fun. currently I am a junior web development at PT Saka Agung Abadi
+I am very interested in coding, currently I'm exploring javascript and php. Express and Lumen are the backends that I understand today. i am also interested in nuxt and this is very fun. currently I am a Fullstack web development at PT Saka Agung Abadi and Bali Culinary Pastry School.
 
 ---
 
