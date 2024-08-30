@@ -2,7 +2,7 @@
 
 Hi my name is Silvester Wali ,nice to meet you 
 
-I am very interested in coding, currently I'm exploring javascript and php. Express and Laravel are the backends that I understand today. i am also interested in nuxt and this is very fun. Graphql is the one tools that i love to explore in the future.
+I'm a Frontend Developer , #nuxtjs #tailwind #daysyui is tools that i use. Also i love to contribute to open source 
 
 If you have any idea to improve my github profile feel free to connected.
 
