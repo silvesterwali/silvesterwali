@@ -11,7 +11,7 @@ If you have any idea to improve my github profile feel free to connected.
 ![GitHub User's stars](https://img.shields.io/github/stars/silvesterwali?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/silvesterwali?style=social)
 
-
+[![silvesterwali Nuxter profile](https://nuxters.nuxt.com/card/silvesterwali/og.png)](https://nuxters.nuxt.com/silvesterwali)
 
 
 
