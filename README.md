@@ -1,6 +1,6 @@
 # Welcome to github profile
 
-Hi my name is Silvester Wali ,nice to meet you 
+Hi my name is Silvester Wali ,nice to meet you  , I from Indonesia and Bali Based .
 
 I'm a Frontend Developer , #nuxtjs #tailwind #daysyui is tools that i use. Also i love to contribute to open source .
 
