@@ -2,9 +2,9 @@
 
 Hi my name is Silvester Wali ,nice to meet you  , I from Indonesia and Bali Based .
 
-I'm a Frontend Developer , #nuxtjs #tailwind #daysyui is tools that i use. Also i love to contribute to open source .
+I'm a Web Developer , #nuxtjs #tailwind #nuxtui #daysyui #laravel is tools that i use. Also i love to contribute to open source .
 
-I currently looking for remote job as frontend developer . if any kind help you offer I really appreciate it.
+I currently looking for remote job as web developer . if any kind help you offer I really appreciate it.
 
 If you have any idea to improve my github profile feel free to connected.
 
