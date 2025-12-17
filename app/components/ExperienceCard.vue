@@ -1,7 +1,7 @@
 <template>
     <div class="p-4 bg-surface rounded-lg shadow-sm border border-border">
         <div class="flex items-center gap-3">
-            <img :src="logo" alt="company logo" class="w-12 h-12 object-cover rounded" />
+            <NuxtImg :src="logo" alt="company logo" class="w-12 h-12 object-cover rounded" />
             <div>
                 <div class="font-semibold">{{ role }}</div>
                 <div class="text-sm text-muted">{{ company }} — <span class="font-medium">{{ dates }}</span></div>

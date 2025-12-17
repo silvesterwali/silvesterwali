@@ -4,7 +4,7 @@
             spotlight-color="primary" target="_blank" :title="item.title" reverse>
             <template #description>
                 <div class="flex flex-col gap-4">
-                    <img :src="item.imageUrl" :alt="item.title" class="w-full h-48 object-cover rounded" />
+                    <NuxtImg :src="item.imageUrl" :alt="item.title" class="w-full h-48 object-cover rounded" />
                     <div>
                         {{ item.description }}
                     </div>

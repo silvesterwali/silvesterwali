@@ -1,6 +1,6 @@
 <template>
     <div class="border border-border rounded-lg overflow-hidden shadow-sm bg-surface">
-        <img :src="image" alt="project" class="w-full h-44 object-cover" />
+        <NuxtImg :src="image" alt="project" class="w-full h-44 object-cover" />
         <div class="p-4">
             <div class="font-semibold">{{ title }}</div>
             <p class="text-sm text-muted mt-1">{{ description }}</p>

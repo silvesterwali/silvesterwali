@@ -1,6 +1,6 @@
 <template>
     <div class="border border-border rounded-lg overflow-hidden bg-surface shadow-sm p-3 flex gap-3 items-center">
-        <img :src="image" alt="certificate" class="w-20 h-14 object-cover rounded" />
+        <NuxtImg :src="image" alt="certificate" class="w-20 h-14 object-cover rounded" />
         <div>
             <div class="font-semibold">{{ title }}</div>
             <div class="text-sm text-muted mt-1">{{ issuer }} — <span class="text-xs">Issued {{ date }}</span></div>
