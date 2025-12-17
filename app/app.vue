@@ -22,6 +22,7 @@ useSeoMeta({
   keywords,
   ogTitle: title,
   ogDescription: description,
+  ogLogo: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJZ7fynTWLxoeDYVtBpwWXE1MTnKyd37mbzJjR",
   ogImage: 'https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJaAf8GYdFKgouc9408sICOtlX5jf1NBTzLarQ',
   twitterImage: 'https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJaAf8GYdFKgouc9408sICOtlX5jf1NBTzLarQ',
   twitterCard: 'summary_large_image',
