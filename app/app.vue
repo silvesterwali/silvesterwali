@@ -123,14 +123,16 @@ definePerson({
 
       <template #right>
         <div class="flex items-center gap-2">
-          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/silvester-wali-a54414177" target="_blank"
-            rel="noreferrer">
-            <UButton icon="i-simple-icons-linkedin" variant="ghost" size="sm" />
-          </a>
 
-          <a aria-label="GitHub" href="https://github.com/silvesterwali" target="_blank" rel="noreferrer">
-            <UButton icon="i-simple-icons-github" variant="ghost" size="sm" />
-          </a>
+          <UButton icon="i-simple-icons-linkedin" variant="ghost" size="sm" aria-label="linkedin-link"
+            href="https://www.linkedin.com/in/silvester-wali-a54414177" target="_blank"
+            aria-describedby="linkedin link" />
+
+
+          <UButton icon="i-simple-icons-github" variant="ghost" size="sm" aria-label="github-link"
+            href="https://github.com/silvesterwali" target="_blank" aria-describedby="github link" />
+
+
 
           <UColorModeButton />
         </div>

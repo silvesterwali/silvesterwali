@@ -1,9 +1,13 @@
 <template>
   <UContainer>
+    <div class="hidden"><h1>Silvester</h1></div>
     <div class="space-y-12">
       <!-- Hero -->
       <section>
-        <Hero />
+        <ClientOnly>
+          <Hero />
+        </ClientOnly>
+
       </section>
       <section>
         <About />
