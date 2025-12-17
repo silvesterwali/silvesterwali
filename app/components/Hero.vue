@@ -2,7 +2,7 @@
     <div>
         <UPageHero :title="title" :description="description" :headline="subtitle" orientation="horizontal">
             <NuxtImg src="https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJZkEcoXWLxoeDYVtBpwWXE1MTnKyd37mbzJjR"
-                alt="Silvester Wali" class="rounded-lg shadow-2xl ring ring-default" />
+                alt="Silvester Wali" class="rounded-lg shadow-2xl ring ring-default" loading="lazy" />
         </UPageHero>
     </div>
 </template>
