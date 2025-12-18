@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/seo',
     '@nuxt/image',
-    '@nuxtjs/i18n',
     '@nuxtjs/html-validator'
   ],
 
