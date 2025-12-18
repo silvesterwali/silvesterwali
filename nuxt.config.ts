@@ -32,5 +32,9 @@ export default defineNuxtConfig({
   image: {
     domains: ['*', 'https://dsil7wenhp.ufs.sh'],
     format: ['webp']
-  }
+  },
+  site: {
+    url: 'https://silvesterwali.my.id',
+    name: 'Silvester Wali'
+  },
 })
