@@ -8,6 +8,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "typecheck": "nuxt typecheck",
     "test": "pnpm run lint && pnpm run typecheck"
   },

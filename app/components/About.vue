@@ -1,42 +1,58 @@
 <template>
-    <div>
-        <UPageSection title="About Me" :description="bio" :links="features" />
+  <div>
+    <UPageSection
+      title="About Me"
+      :description="bio"
+      :links="features"
+    />
 
-        <UMarquee pause-on-hover :overlay="false" :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }">
-            <UPageCard spotlight spotlight-color="primary" v-for="skill in skills" :key="skill" :title="skill" />
-        </UMarquee>
-    </div>
+    <UMarquee
+      pause-on-hover
+      :overlay="false"
+      :ui="{ root: '[--gap:--spacing(4)]', content: 'w-auto py-1' }"
+    >
+      <UPageCard
+        v-for="skill in skills"
+        :key="skill"
+        spotlight
+        spotlight-color="primary"
+        :title="skill"
+      />
+    </UMarquee>
+  </div>
 </template>
 
 <script setup lang="ts">
-
-const { bio } = useAbout();
+const { bio } = useAbout()
 const { linkedin, github, phone, email } = useContact()
 const { skills } = useSkills()
 
 const features = [
-    {
-        label: 'LinkedIn',
-        trailingIcon: 'i-lucide-linkedin',
-        to: linkedin.value,
-    },
-    {
-        label: 'GitHub',
-        trailingIcon: 'i-lucide-github',
-        to: github.value,
-    },
-    {
-        label: 'Phone',
-        trailingIcon: 'i-lucide-phone',
-        to: `tel:${phone.value}`,
-    },
-    {
-        label: 'Email',
-        trailingIcon: 'i-lucide-mail',
-        to: `mailto:${email.value}`,
-    }
+  {
+    label: 'LinkedIn',
+    trailingIcon: 'i-lucide-linkedin',
+    to: linkedin.value,
+    ariaLabelledby: 'LinkedIn Profile'
+  },
+  {
+    label: 'GitHub',
+    trailingIcon: 'i-lucide-github',
+    to: github.value,
+    ariaLabelledby: 'GitHub Profile'
+  },
+  {
+    label: 'Phone',
+    trailingIcon: 'i-lucide-phone',
+    to: `tel:${phone.value}`,
+    ariaLabelledby: 'Phone Number'
+  },
+  {
+    label: 'Email',
+    trailingIcon: 'i-lucide-mail',
+    to: `mailto:${email.value}`,
+    ariaLabelledby: 'Email Address'
+  }
 ]
-
 </script>
 
 <style scoped></style>
