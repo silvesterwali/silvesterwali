@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/seo',
     '@nuxt/image',
-    '@nuxtjs/html-validator'
+    '@nuxtjs/html-validator',
+    'nuxt-gtag'
   ],
 
   devtools: {
@@ -13,6 +14,10 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+  site: {
+    url: 'https://silvesterwali.my.id',
+    name: 'Silvester Wali'
+  },
 
   routeRules: {
     '/': { prerender: true }
@@ -28,13 +33,13 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  gtag: {
+    id: 'GTM-WRNZ8CZM'
+  },
   image: {
     domains: ['*', 'https://dsil7wenhp.ufs.sh'],
     format: ['webp']
-  },
-  site: {
-    url: 'https://silvesterwali.my.id',
-    name: 'Silvester Wali',
   },
   sitemap: {
     zeroRuntime: true
