@@ -34,6 +34,9 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://silvesterwali.my.id',
-    name: 'Silvester Wali'
+    name: 'Silvester Wali',
   },
+  sitemap: {
+    zeroRuntime: true
+  }
 })
