@@ -15,7 +15,7 @@ useHead({
   }
 })
 
-const title = 'Silvester Wali — Freelance Web Developer'
+const title = 'Freelance Web Developer'
 const description = 'Passionate about crafting efficient and scalable and custom web applications. Experienced in working with diverse technologies to deliver high-quality solutions.'
 const keywords = 'Silvester Wali, Freelance Web Developer, Web Developer, Full-Stack Developer, JavaScript, TypeScript, Vue.js, Nuxt.js, React, Node.js, Express.js, MongoDB, PostgreSQL, RESTful APIs, GraphQL, HTML5, CSS3, Tailwind CSS, Responsive Design, Web Applications, Software Development'
 
@@ -119,35 +119,19 @@ definePerson({
   <UApp>
     <UHeader>
       <template #left>
-        <NuxtLink
-          to="/"
-          class="flex items-center gap-3"
-        >
+        <NuxtLink to="/" class="flex items-center gap-3">
           <span class="font-semibold text-lg">Silvester Wali</span>
         </NuxtLink>
       </template>
 
       <template #right>
         <div class="flex items-center gap-2">
-          <UButton
-            icon="i-simple-icons-linkedin"
-            variant="ghost"
-            size="sm"
-            aria-label="linkedin-link"
-            href="https://www.linkedin.com/in/silvester-wali-a54414177"
-            target="_blank"
-            aria-describedby="linkedin link"
-          />
+          <UButton icon="i-simple-icons-linkedin" variant="ghost" size="sm" aria-label="linkedin-link"
+            href="https://www.linkedin.com/in/silvester-wali-a54414177" target="_blank"
+            aria-describedby="linkedin link" />
 
-          <UButton
-            icon="i-simple-icons-github"
-            variant="ghost"
-            size="sm"
-            aria-label="github-link"
-            href="https://github.com/silvesterwali"
-            target="_blank"
-            aria-describedby="github link"
-          />
+          <UButton icon="i-simple-icons-github" variant="ghost" size="sm" aria-label="github-link"
+            href="https://github.com/silvesterwali" target="_blank" aria-describedby="github link" />
 
           <UColorModeButton />
         </div>
@@ -166,14 +150,8 @@ definePerson({
       </template>
 
       <template #right>
-        <UButton
-          to="https://github.com/silvesterwali"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
+        <UButton to="https://github.com/silvesterwali" target="_blank" icon="i-simple-icons-github" aria-label="GitHub"
+          color="neutral" variant="ghost" />
       </template>
     </UFooter>
   </UApp>
