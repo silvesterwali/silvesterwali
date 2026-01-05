@@ -116,8 +116,9 @@ definePerson({
 </script>
 
 <template>
+  <VitePwaManifest />
   <UApp>
-    <VitePwaManifest />
+
     <UHeader>
       <template #left>
         <NuxtLink to="/" class="flex items-center gap-3">
