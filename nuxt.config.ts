@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxt/image',
     '@nuxtjs/html-validator',
-    'nuxt-gtag'
+    'nuxt-gtag',
+    '@vite-pwa/nuxt'
   ],
 
   devtools: {
@@ -40,6 +41,40 @@ export default defineNuxtConfig({
   image: {
     domains: ['*', 'https://dsil7wenhp.ufs.sh'],
     format: ['webp']
+  },
+  pwa: {
+    registerType: "autoUpdate",
+    manifest: {
+      name: 'Silvester Wali',
+      short_name: 'Silvester Wali',
+      description: 'Passionate about crafting efficient and scalable and custom web applications. Experienced in working with diverse technologies to deliver high-quality solutions.',
+      theme_color: '#ffffff',
+      icons: [
+        {
+          src: 'https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJrjnvqFBkgjYblZQyIN5sG3famCq9uExd2OAc',
+          sizes: '64x64',
+          type: 'image/png'
+        },
+        {
+          src: 'https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJrjnvqFBkgjYblZQyIN5sG3famCq9uExd2OAc',
+          sizes: '144x144',
+          type: 'image/png'
+        },
+        {
+          src: 'https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJrjnvqFBkgjYblZQyIN5sG3famCq9uExd2OAc',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: 'https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJrjnvqFBkgjYblZQyIN5sG3famCq9uExd2OAc',
+          sizes: '512x512',
+          type: 'image/png'
+        }
+      ]
+    },
+    workbox: {
+      navigateFallback: '/'
+    },
   },
   sitemap: {
     zeroRuntime: true
