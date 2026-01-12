@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxt/image',
     '@nuxtjs/html-validator',
-    'nuxt-gtag',
+    'nuxt-gtag'
   ],
 
   devtools: {
