@@ -113,10 +113,11 @@ definePerson({
     'https://github.com/silvesterwali'
   ]
 })
+
+const currentYear = computed(() => new Date().getFullYear())
 </script>
 
 <template>
-  <VitePwaManifest />
   <UApp>
     <UHeader>
       <template #left>
@@ -162,7 +163,7 @@ definePerson({
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          Built with Nuxt • © {{ new Date().getFullYear() }} Silvester Wali
+          Built with Nuxt • © {{ currentYear }} Silvester Wali
         </p>
       </template>
 

@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxt/image',
     '@nuxtjs/html-validator',
-    'nuxt-gtag'
+    'nuxt-gtag',
+    'nuxt-delay-hydration'
   ],
 
   devtools: {
@@ -24,6 +25,10 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-01-15',
+  delayHydration: {
+    debug: process.env.NODE_ENV === 'development',
+    mode: 'mount'
+  },
 
   eslint: {
     config: {
