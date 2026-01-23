@@ -81,6 +81,22 @@ export function useWorkingExperience() {
       ],
       stack: ['Next.js', 'React.js', 'Vue.js', 'Tailwind CSS', 'JavaScript', 'Laravel', 'Golang', 'MySQL', 'PostgreSQL', 'Docker'],
       scope: ['Web Application Development', 'Maintenance', 'Fullstack Development', 'Team Collaboration']
+    },
+    {
+      companyName: 'KClubGroup',
+      companyWebsite: 'https://kclubgroup.com',
+      companyLogoUrl: 'https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJ1WaLIkKBuUbRLA9npC8HzxWrcf0qPOwme73X',
+      position: 'Web Developer',
+      startDate: 'January 5, 2026',
+      endDate: null,
+      responsibilities: [
+        'Developing and maintaining web applications using Next.js and Vue.js for the frontend.',
+        'Collaborating with marketing teams to create seamless user experiences.',
+        'Optimizing web applications for maximum speed and scalability.',
+        'Implementing best practices for code quality, including code reviews and testing.'
+      ],
+      stack: ['Laravel', 'Next.js', 'Vue.js', 'Tailwind CSS', 'JavaScript', 'HTML5', 'CSS3','AWS S3','AWS CloudFront','Node.js','Express.js','Nginx'],
+      scope: ['Frontend Development','Backend Development', 'Responsive Design', 'Performance Optimization', 'Team Collaboration']
     }
   ])
   return { items }
