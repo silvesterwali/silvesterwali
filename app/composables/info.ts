@@ -1,12 +1,12 @@
 export function useHero() {
   const title = ref('Silvester Wali')
-  const subtitle = ref('Web Developer')
-  const description = ref('Passionate about crafting efficient and scalable and custom web applications. Experienced in working with diverse technologies to deliver high-quality solutions.')
+  const subtitle = ref('Full Stack Web Developer')
+  const description = ref('Full Stack Developer with 6+ years of experience building scalable web applications. Proficient in JavaScript, TypeScript, Vue.js, Nuxt.js, React, Next.js, PHP, and Laravel. Passionate about clean code, responsive design, and delivering high-quality solutions.')
   return { title, subtitle, description }
 }
 
 export function useAbout() {
-  const bio = ref('Self-taught developer with 6+ years building scalable web applications. I specialize in frontend development with Vue & Nuxt, and backend solutions with Laravel. I\'m passionate about writing clean, maintainable code and creating responsive, user-focused interfaces.')
+  const bio = ref('Self-taught Full Stack Developer with 6+ years of hands-on experience building scalable, production-ready web applications. Specialized in modern JavaScript frameworks including Vue.js, Nuxt.js, React, and Next.js for frontend development, and PHP with Laravel for robust backend solutions. Strong expertise in RESTful API design, database management (MySQL, MongoDB, PostgreSQL), and responsive UI/UX implementation with Tailwind CSS. Proven track record of collaborating with cross-functional teams to deliver high-quality software on time.')
   return { bio }
 }
 
@@ -21,18 +21,29 @@ export function useContact() {
 
 export function useSkills() {
   const skills = ref<string[]>([
-    'JavaScript',
+    'JavaScript (ES6+)',
     'TypeScript',
     'Vue.js',
     'Nuxt.js',
+    'React.js',
+    'Next.js',
+    'Node.js',
+    'Express.js',
+    'PHP',
+    'Laravel',
+    'REST API',
+    'GraphQL',
     'HTML5',
     'CSS3',
     'Tailwind CSS',
-    'PHP',
-    'Laravel',
+    'Bootstrap',
     'MySQL',
+    'PostgreSQL',
     'MongoDB',
-    'Git'
+    'Git',
+    'Docker',
+    'Linux',
+    'Agile/Scrum'
   ])
   return { skills }
 }

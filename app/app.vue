@@ -119,7 +119,7 @@ const currentYear = computed(() => new Date().getFullYear())
 
 <template>
   <UApp>
-    <UHeader>
+    <UHeader class="print:hidden">
       <template #left>
         <NuxtLink
           to="/"
@@ -151,6 +151,15 @@ const currentYear = computed(() => new Date().getFullYear())
             aria-describedby="github link"
           />
 
+          <UButton
+            to="/print-resume"
+            icon="i-heroicons-solid-printer"
+            variant="ghost"
+            size="sm"
+            aria-label="print-resume"
+            aria-describedby="print resume"
+          />
+
           <UColorModeButton />
         </div>
       </template>
@@ -160,7 +169,7 @@ const currentYear = computed(() => new Date().getFullYear())
       <NuxtPage />
     </UMain>
 
-    <UFooter>
+    <UFooter class="print:hidden">
       <template #left>
         <p class="text-sm text-muted">
           Built with Nuxt • © {{ currentYear }} Silvester Wali
