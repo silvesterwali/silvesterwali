@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["typescript"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2024": true
+  },
+  "globals": {
+    "defineNuxtConfig": "readonly",
+    "defineAppConfig": "readonly",
+    "definePageMeta": "readonly"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn"
+  },
+  "ignorePatterns": ["node_modules", ".nuxt", ".output", "dist"]
+}

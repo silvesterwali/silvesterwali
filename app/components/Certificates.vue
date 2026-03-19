@@ -20,9 +20,7 @@
           />
 
           <USeparator />
-          <div>
-            Issued by {{ item.issuer }} on {{ item.issueDate }}
-          </div>
+          <div>Issued by {{ item.issuer }} on {{ item.issueDate }}</div>
         </div>
       </template>
     </UPageCard>
@@ -30,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-const { items } = useCertificates()
+const { items } = useCertificates();
 </script>
 
 <style scoped></style>

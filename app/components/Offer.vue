@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-const { items } = useOffers()
+const { items } = useOffers();
 </script>
 
 <style scoped></style>

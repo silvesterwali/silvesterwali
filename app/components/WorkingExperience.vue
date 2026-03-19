@@ -18,18 +18,15 @@
           size="lg"
           :avatar="{
             src: item.companyLogoUrl,
-            icon: 'i-lucide-image'
+            icon: 'i-lucide-image',
           }"
         />
       </template>
 
       <template #description>
         <div class="flex flex-col gap-4">
-          <ul class=" list-disc list-inside">
-            <li
-              v-for="responsibility in item.responsibilities"
-              :key="responsibility"
-            >
+          <ul class="list-disc list-inside">
+            <li v-for="responsibility in item.responsibilities" :key="responsibility">
               {{ responsibility }}
             </li>
           </ul>
@@ -64,7 +61,7 @@
 </template>
 
 <script setup lang="ts">
-const { items } = useWorkingExperience()
+const { items } = useWorkingExperience();
 </script>
 
 <style scoped></style>

@@ -1,10 +1,6 @@
 <template>
   <div>
-    <UPageSection
-      title="About Me"
-      :description="bio"
-      :links="features"
-    />
+    <UPageSection title="About Me" :description="bio" :links="features" />
 
     <UMarquee
       pause-on-hover
@@ -23,36 +19,36 @@
 </template>
 
 <script setup lang="ts">
-const { bio } = useAbout()
-const { linkedin, github, phone, email } = useContact()
-const { skills } = useSkills()
+const { bio } = useAbout();
+const { linkedin, github, phone, email } = useContact();
+const { skills } = useSkills();
 
 const features = [
   {
-    label: 'LinkedIn',
-    trailingIcon: 'i-lucide-linkedin',
+    label: "LinkedIn",
+    trailingIcon: "i-lucide-linkedin",
     to: linkedin.value,
-    ariaLabelledby: 'LinkedIn Profile'
+    ariaLabelledby: "LinkedIn Profile",
   },
   {
-    label: 'GitHub',
-    trailingIcon: 'i-lucide-github',
+    label: "GitHub",
+    trailingIcon: "i-lucide-github",
     to: github.value,
-    ariaLabelledby: 'GitHub Profile'
+    ariaLabelledby: "GitHub Profile",
   },
   {
-    label: 'Phone',
-    trailingIcon: 'i-lucide-phone',
+    label: "Phone",
+    trailingIcon: "i-lucide-phone",
     to: `tel:${phone.value}`,
-    ariaLabelledby: 'Phone Number'
+    ariaLabelledby: "Phone Number",
   },
   {
-    label: 'Email',
-    trailingIcon: 'i-lucide-mail',
+    label: "Email",
+    trailingIcon: "i-lucide-mail",
     to: `mailto:${email.value}`,
-    ariaLabelledby: 'Email Address'
-  }
-]
+    ariaLabelledby: "Email Address",
+  },
+];
 </script>
 
 <style scoped></style>

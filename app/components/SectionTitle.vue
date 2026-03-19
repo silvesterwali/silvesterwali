@@ -4,10 +4,7 @@
       <h3 class="font-semibold text-xl lg:text-2xl">
         {{ title }}
       </h3>
-      <p
-        v-if="subTitle"
-        class="text-muted text-sm"
-      >
+      <p v-if="subTitle" class="text-muted text-sm">
         {{ subTitle }}
       </p>
     </div>
@@ -17,9 +14,9 @@
 
 <script setup lang="ts">
 defineProps<{
-  title: string
-  subTitle?: string
-}>()
+  title: string;
+  subTitle?: string;
+}>();
 </script>
 
 <style scoped></style>

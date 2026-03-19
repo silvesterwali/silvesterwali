@@ -52,7 +52,7 @@
 </template>
 
 <script setup lang="ts">
-const { items } = useProjects()
+const { items } = useProjects();
 </script>
 
 <style scoped></style>
