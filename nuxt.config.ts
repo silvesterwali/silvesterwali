@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     url: "https://silvesterwali.my.id",
     name: "Silvester Wali",
     description:
-      "Full Stack Web Developer with 6+ years experience. Specializing in Vue.js, Nuxt.js, React, PHP, and Laravel.",
+      "Full Stack Web Developer with 7+ years experience. Specializing in Vue.js, Nuxt.js, React, PHP, and Laravel located in Bali, Jimbaran",
     defaultLocale: "en",
   },
 
@@ -71,5 +71,10 @@ export default defineNuxtConfig({
   },
   sitemap: {
     zeroRuntime: true,
+  },
+  vite: {
+    optimizeDeps: {
+      include: ["@vue/devtools-core", "@vue/devtools-kit", "@unhead/schema-org/vue"],
+    },
   },
 });

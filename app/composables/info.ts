@@ -2,14 +2,14 @@ export function useHero() {
   const title = ref("Silvester Wali");
   const subtitle = ref("Full Stack Web Developer");
   const description = ref(
-    "Full Stack Developer with 6+ years of experience building scalable web applications. Proficient in JavaScript, TypeScript, Vue.js, Nuxt.js, React, Next.js, PHP, and Laravel. Passionate about clean code, responsive design, and delivering high-quality solutions.",
+    "Full Stack Developer with 7+ years of experience building scalable web applications. Proficient in JavaScript, TypeScript, Vue.js, Nuxt.js, React, Next.js, PHP, and Laravel. Passionate about clean code, responsive design, and delivering high-quality solutions.",
   );
   return { title, subtitle, description };
 }
 
 export function useAbout() {
   const bio = ref(
-    "Self-taught Full Stack Developer with 6+ years of hands-on experience building scalable, production-ready web applications. Specialized in modern JavaScript frameworks including Vue.js, Nuxt.js, React, and Next.js for frontend development, and PHP with Laravel for robust backend solutions. Strong expertise in RESTful API design, database management (MySQL, MongoDB, PostgreSQL), and responsive UI/UX implementation with Tailwind CSS. Proven track record of collaborating with cross-functional teams to deliver high-quality software on time.",
+    "Self-taught Full Stack Developer with 7+ years of hands-on experience building scalable, production-ready web applications. Specialized in modern JavaScript frameworks including Vue.js, Nuxt.js, React, and Next.js for frontend development, and PHP with Laravel for robust backend solutions. Strong expertise in RESTful API design, database management (MySQL, MongoDB, PostgreSQL), and responsive UI/UX implementation with Tailwind CSS. Proven track record of collaborating with cross-functional teams to deliver high-quality software on time.",
   );
   return { bio };
 }

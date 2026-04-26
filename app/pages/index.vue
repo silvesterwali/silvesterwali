@@ -1,16 +1,11 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "Silvester Wali - Full Stack Web Developer",
+  title: "Full Stack Web Developer Bali - Silvester Wali",
   description:
-    "Full Stack Developer with 6+ years of experience building scalable web applications. Vue.js, Nuxt.js, React, PHP, Laravel expert.",
-  ogTitle: "Silvester Wali - Full Stack Web Developer",
+    "Full Stack Web Developer with 6+ years of experience crafting efficient, scalable, and custom web applications. Specializing in Vue.js, Nuxt.js, React, PHP, and Laravel. Based in Jimbaran, Bali serving clients across Indonesia including Bali, Jakarta, Surabaya, and Nusa Dua.",
+  ogTitle: "Full Stack Web Developer Bali,Indondia - Silvester Wali",
   ogDescription:
-    "Full Stack Developer specializing in Vue.js, Nuxt.js, React, PHP, and Laravel. Available for freelance projects.",
-});
-
-defineOgImageComponent("NuxtSeo", {
-  title: "Silvester Wali",
-  description: "Full Stack Web Developer",
+    "Full Stack Web Developer with 6+ years of experience crafting efficient, scalable, and custom web applications. Specializing in Vue.js, Nuxt.js, React, PHP, and Laravel. Based in Jimbaran, Bali serving clients across Indonesia including Bali, Jakarta, Surabaya, and Nusa Dua.",
 });
 </script>
 

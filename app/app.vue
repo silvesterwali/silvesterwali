@@ -18,11 +18,11 @@ useHead({
 });
 
 const siteUrl = "https://silvesterwali.my.id";
-const title = "Silvester Wali - Freelance Web Developer";
+const title = "Freelance Web Developer Bali, Indonesia";
 const description =
-  "Full Stack Web Developer with 6+ years of experience crafting efficient, scalable, and custom web applications using Vue.js, Nuxt.js, React, PHP, and Laravel.";
+  "Full Stack Web Developer with 6+ years of experience crafting efficient, scalable, and custom web applications. Specializing in Vue.js, Nuxt.js, React, PHP, and Laravel. Based in Jimbaran, Bali serving clients across Indonesia including Bali, Jakarta, Surabaya, and Nusa Dua.";
 const keywords =
-  "Silvester Wali, Freelance Web Developer, Full-Stack Developer, JavaScript, TypeScript, Vue.js, Nuxt.js, React, Next.js, Node.js, PHP, Laravel, PostgreSQL, MongoDB, RESTful APIs, Tailwind CSS, Web Applications, Remote Developer, Indonesia";
+  "Silvester Wali, Freelance Web Developer Bali, Full Stack Developer Indonesia, Web Developer Jimbaran, Web Developer Nusa Dua, JavaScript Developer, TypeScript Developer, Vue.js Developer Bali, Nuxt.js Developer, React Developer, PHP Developer, Laravel Developer, PostgreSQL, MongoDB, RESTful APIs, GraphQL, Tailwind CSS, Web Applications, Remote Developer, Indonesia, Bali, Jimbaran, Nusa Dua, Seminyak, Canggu, Ubud, Jakarta, Surabaya, Freelance Developer Indonesia, E-commerce Developer, Hotel Booking Developer, Tourism Website Developer";
 
 useSeoMeta({
   title,
@@ -39,14 +39,17 @@ useSeoMeta({
   ogImage: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJaAf8GYdFKgouc9408sICOtlX5jf1NBTzLarQ",
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogImageAlt: "Silvester Wali - Full Stack Web Developer",
+  ogImageAlt: "Silvester Wali - Full Stack Web Developer Bali",
   twitterTitle: title,
   twitterDescription: description,
-  twitterImage: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJaAf8GYdFKgouc9408sICOtlX5jf1NBTzLarQ",
-  twitterImageAlt: "Silvester Wali - Full Stack Web Developer",
+  twitterImage: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJaAf8GYdFKgouc9408sISOtlX5jf1NBTzLarQ",
+  twitterImageAlt: "Silvester Wali - Full Stack Web Developer Bali",
   twitterCard: "summary_large_image",
   twitterSite: "@silvesterwali",
   twitterCreator: "@silvesterwali",
+  geoRegion: "ID-BA",
+  geoPlaceName: "Bali, Indonesia",
+  geoPosition: "-8.3405;115.0920",
 });
 
 definePerson({
