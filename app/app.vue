@@ -7,8 +7,8 @@ useHead({
   ],
   link: [
     { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-    { rel: "icon", href: "/sw-logo.svg", sizes: "16x16", type: "image/png" },
-    { rel: "icon", href: "/sw-logo.svg", sizes: "32x32", type: "image/png" },
+    { rel: "icon", href: "/sw-logo.svg", sizes: "16x16", type: "image/svg+xml" },
+    { rel: "icon", href: "/sw-logo.svg", sizes: "32x32", type: "image/svg+xml" },
     { rel: "apple-touch-icon", href: "/sw-logo.svg" },
     { rel: "manifest", href: "/site.webmanifest" },
   ],
