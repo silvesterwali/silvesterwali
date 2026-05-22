@@ -13,11 +13,10 @@ useSeoMeta({
   <UContainer>
     <article class="space-y-12" itemscope itemtype="https://schema.org/WebPage">
       <!-- Hero -->
-      <header>
         <ClientOnly>
           <Hero />
         </ClientOnly>
-      </header>
+  
       <section>
         <About />
       </section>
