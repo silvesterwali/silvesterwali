@@ -39,7 +39,7 @@ export function useProjects() {
     {
       title: "E-commerce Website",
       description:
-        "A full-featured e-commerce website built with Nuxt.js, Tailwind CSS, and Laravel for backend services.",
+        "A full-featured e-commerce website built with Next.js, Tailwind CSS, and Laravel for backend services.",
       imageUrl: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJcB00HeAW1h7zfNylHSkd4porxPTcsna0CE5m",
       projectUrl: "https://baiko.id",
       technologies: ["Next.js", "Shadcn UI", "Tailwind CSS", "Laravel", "MySQL", "REST API"],
