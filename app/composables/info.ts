@@ -23,32 +23,48 @@ export function useContact() {
   return { email, phone, linkedin, github };
 }
 
-export function useSkills() {
-  const skills = ref<string[]>([
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "Vue.js",
-    "Nuxt.js",
-    "React.js",
-    "Next.js",
-    "Node.js",
-    "Express.js",
-    "PHP",
-    "Laravel",
-    "REST API",
-    "GraphQL",
-    "HTML5",
-    "CSS3",
-    "Tailwind CSS",
-    "Bootstrap",
-    "MySQL",
-    "PostgreSQL",
-    "MongoDB",
-    "Git",
-    "Docker",
-    "Linux",
-    "Agile/Scrum",
+interface SkillGroup {
+  label: string;
+  items: string[];
+}
+
+export function useSkillGroups() {
+  const groups = ref<SkillGroup[]>([
+    {
+      label: "Languages & Frameworks",
+      items: [
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "Vue.js",
+        "Nuxt.js",
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "PHP",
+        "Laravel",
+        "Golang",
+      ],
+    },
+    {
+      label: "Frontend",
+      items: ["HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Responsive Design"],
+    },
+    {
+      label: "Backend & Database",
+      items: ["REST API", "GraphQL", "MySQL", "PostgreSQL", "MongoDB"],
+    },
+    {
+      label: "Tools & DevOps",
+      items: ["Git", "Docker", "Linux", "Nginx", "AWS S3", "AWS CloudFront", "Agile/Scrum"],
+    },
   ]);
+  return { groups };
+}
+
+export function useSkills() {
+  const { groups } = useSkillGroups();
+  const skills = computed(() => groups.value.flatMap((group) => group.items));
   return { skills };
 }
 

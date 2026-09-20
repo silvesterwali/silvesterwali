@@ -3,22 +3,24 @@ import type { ProjectShowcase } from "@/types/project";
 export function useProjects() {
   const items = ref<ProjectShowcase[]>([
     {
-      title: "Dashboard Education Courses UI Design",
-      description: "A learning-dashboard UI built with Nuxt & BootstrapVue.",
-      imageUrl: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJuF0ibIvdTODuW91obUCRctKfQIMYeN65rFSs",
-      projectUrl: "https://education-courses-ui-design.vercel.app",
-      technologies: ["Nuxt.js", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
-      scope: ["Frontend Development"],
+      title: "Sardine Seminyak",
+      description:
+        "A restaurant website for Sardine Seminyak, built with Nuxt.js and Tailwind CSS.",
+      imageUrl: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJIryYKzRhFDJmXfWv0LauE8OZi7MYAxroeHV2",
+      projectUrl: "https://www.sardineseminyak.com",
+      technologies: ["Nuxt.js", "Tailwind CSS", "Drizzle ORM", "s3"],
+      scope: ["Fullstack Development"],
     },
     {
-      title: "Saas Landing Pages",
+      title: "Le Bleu By K Club",
       description:
-        "SaaS landing pages focused on conversion performance. Built with Nuxt & Tailwind CSS.",
-      imageUrl: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJqaUsx8Yyb0PY9GE81jMfD26mNehlkqn73Tyc",
-      projectUrl: "https://saas-landing-page-seven.vercel.app",
-      technologies: ["Nuxt.js", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"],
-      scope: ["Frontend Development"],
+        "A luxury restaurant website for Le Bleu By K Club, built with Nuxt.js and Tailwind CSS.",
+      imageUrl: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJuycu7MvdTODuW91obUCRctKfQIMYeN65rFSs",
+      projectUrl: "https://lebleubykclub.com",
+      technologies: ["Nuxt.js", "Tailwind CSS", "Drizzle ORM", "s3"],
+      scope: ["Fullstack Development"],
     },
+
     {
       title: "Travel Chingu Website",
       description: "A travel agency website built with Nuxt.js, Tailwind CSS",
@@ -53,6 +55,23 @@ export function useProjects() {
       projectUrl: "https://luxbali.net",
       technologies: ["Nuxt.js", "Tailwind CSS", "Nitro", "Laravel", "PostgreSQL"],
       scope: ["Fullstack Development"],
+    },
+    {
+      title: "Dashboard Education Courses UI Design",
+      description: "A learning-dashboard UI built with Nuxt & BootstrapVue.",
+      imageUrl: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJuF0ibIvdTODuW91obUCRctKfQIMYeN65rFSs",
+      projectUrl: "https://education-courses-ui-design.vercel.app",
+      technologies: ["Nuxt.js", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
+      scope: ["Frontend Development"],
+    },
+    {
+      title: "Saas Landing Pages",
+      description:
+        "SaaS landing pages focused on conversion performance. Built with Nuxt & Tailwind CSS.",
+      imageUrl: "https://dsil7wenhp.ufs.sh/f/kPPdywK0FxLJqaUsx8Yyb0PY9GE81jMfD26mNehlkqn73Tyc",
+      projectUrl: "https://saas-landing-page-seven.vercel.app",
+      technologies: ["Nuxt.js", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"],
+      scope: ["Frontend Development"],
     },
   ]);
 

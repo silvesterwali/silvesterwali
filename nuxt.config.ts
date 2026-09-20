@@ -68,7 +68,7 @@ export default defineNuxtConfig({
   image: {
     domains: ["*", "https://dsil7wenhp.ufs.sh"],
     format: ["webp"],
-    provider:"none"
+    provider: "none",
   },
   sitemap: {
     zeroRuntime: true,

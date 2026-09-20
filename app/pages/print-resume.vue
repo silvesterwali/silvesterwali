@@ -13,8 +13,8 @@
         <div class="flex-1">
           <h1 class="text-xl font-bold m-0 text-gray-900">{{ title }}</h1>
           <p class="text-sm font-semibold m-0 mb-1 text-gray-800">{{ subtitle }}</p>
-          <p class="text-xs m-0 mb-2 text-gray-700">{{ description }}</p>
           <ul class="list-none m-0 p-0 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-gray-800">
+            <li>Denpasar, Bali, Indonesia</li>
             <li>{{ email }}</li>
             <li>{{ phone }}</li>
             <li>linkedin.com/in/silvester-wali-a54414177</li>
@@ -24,22 +24,35 @@
       </div>
     </header>
 
+    <!-- Summary -->
+    <section class="mb-3">
+      <h2 class="text-sm font-bold uppercase border-b-2 border-gray-900 pb-1 mb-2 text-gray-900">
+        Summary
+      </h2>
+      <p class="m-0 text-xs text-gray-800">{{ description }}</p>
+    </section>
+
     <!-- Skills -->
     <section class="mb-3">
       <h2 class="text-sm font-bold uppercase border-b-2 border-gray-900 pb-1 mb-2 text-gray-900">
         Skills
       </h2>
-      <p class="m-0 text-xs text-gray-800">{{ skills.join(", ") }}</p>
+      <div class="flex flex-col gap-1">
+        <p v-for="group in skillGroups" :key="group.label" class="m-0 text-xs text-gray-800">
+          <span class="font-bold text-gray-900">{{ group.label }}:</span>
+          {{ group.items.join(", ") }}
+        </p>
+      </div>
     </section>
 
-    <!-- Work Experience -->
-    <section class="mb-3">
+    <!-- Work & Freelance Experience -->
+    <section v-for="section in experienceSections" :key="section.title" class="mb-3">
       <h2 class="text-sm font-bold uppercase border-b-2 border-gray-900 pb-1 mb-2 text-gray-900">
-        Work Experience
+        {{ section.title }}
       </h2>
       <div class="flex flex-col gap-4">
         <div
-          v-for="exp in workExperience"
+          v-for="exp in section.items"
           :key="exp.companyName + exp.startDate"
           class="break-inside-avoid"
         >
@@ -93,9 +106,31 @@ useHead({
 
 const { title, subtitle, description } = useHero();
 const { email, phone } = useContact();
-const { skills } = useSkills();
-const { items: workExperience } = useWorkingExperience();
+const { groups: skillGroups } = useSkillGroups();
+const { items: experience } = useWorkingExperience();
 const { items: certificates } = useCertificates();
+
+const sortedExperience = computed(() =>
+  [...experience.value].sort(
+    (a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime(),
+  ),
+);
+
+const isFreelance = (exp: { scope?: string[] }) =>
+  exp.scope?.includes("Freelance Project") ?? false;
+
+const experienceSections = computed(() =>
+  [
+    {
+      title: "Work Experience",
+      items: sortedExperience.value.filter((exp) => !isFreelance(exp)),
+    },
+    {
+      title: "Freelance Experience",
+      items: sortedExperience.value.filter((exp) => isFreelance(exp)),
+    },
+  ].filter((section) => section.items.length > 0),
+);
 
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr);
